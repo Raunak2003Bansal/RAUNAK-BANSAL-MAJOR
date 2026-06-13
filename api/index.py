@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from fastapi.responses import FileResponse
+from fastapi.staticfiles import StaticFiles
 import os
 
 app = FastAPI()
@@ -14,3 +15,5 @@ def return_resume():
 @app.get("/resume")
 def return_resume():
     return FileResponse(RESUME_PATH)
+
+app.mount("/", StaticFiles(directory=BASE_DIR), name="static")

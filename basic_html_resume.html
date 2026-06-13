@@ -3,39 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Raunak-Bansal-Resume</title>
+    <title>Raunak Bansal Resume</title>
+    <link href="./basic_html_resume.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-        <h1><i>RAUNAK BANSAL</i></h1>
-        <h3> GenAI Engineer</h3>
-        <p><b>Phone:</b> +91 9600151741 | <b>Email:</b> <a href="mailto:raunakbansal2003@gmail.com">raunakbansal2003@gmail.com</a> | <b>DOB:</b> 27<sup>th</sup> September 2003</p>
-        <h3>PROFESSIONAL SUMMARY</h3>
+    <div id="border">
+        <h1>RAUNAK BANSAL</h1>
+        <h3 class="main_heading"> GenAI Engineer</h3>
+        <p><b class = "sub_heading">Phone:</b> +91 9600151741 | <b class="sub_heading">Email:</b> <a href="mailto:raunakbansal2003@gmail.com">raunakbansal2003@gmail.com</a> | <b class="sub_heading">DOB:</b> 27<sup>th</sup> September 2003</p>
+        <h3 class="main_heading">PROFESSIONAL SUMMARY</h3>
         <hr />
-        <p><strong>Machine Learning</strong> and <strong>Generative AI</strong> engineer with hands-on experience in building <strong>end-to-end ML systems</strong>,
-<strong>LLM-powered agentic workflows</strong>, and <strong>Retrieval-Augmented Generation (RAG) pipelines</strong>. Skilled in designing
-scalable AI solutions using <strong>LangGraph</strong>, <strong>FastAPI</strong>, and modern ML techniques for real-world automation
-problems. Strong foundation in <strong>supervised learning</strong>, <strong>ensemble methods</strong>, and <strong>data-driven decision systems</strong>.
-Focused on <strong>AI governance</strong>, <strong>secure deployment</strong>, and <strong>human-in-the-loop architectures</strong> for reliable productiongrade systems. Passionate about translating complex data into actionable intelligence and building impactful AIdriven products.
+        <p>
+  <strong>Machine Learning and Generative AI engineer</strong> with hands-on experience in building 
+  <strong>end-to-end ML systems</strong>, LLM-powered <strong>agentic workflows</strong>, and 
+  <strong>Retrieval-Augmented Generation (RAG)</strong> pipelines. Skilled in designing scalable AI solutions using 
+  LangGraph, FastAPI, and modern ML techniques for real-world automation problems. Strong foundation 
+  in supervised learning, ensemble methods, and data-driven decision systems. Focused on AI governance, 
+  secure deployment, and human-in-the-loop architectures for reliable, 
+  <strong>production-grade systems</strong>. Passionate about translating complex data into actionable 
+  intelligence and building impactful AI-driven products.
 </p>
-        <h3>EDUCATION</h3>
+        <h3 class="main_heading">EDUCATION</h3>
+        <hr />
+        <ul class="education-list">
+            <li>
+                <div class="education-header">
+                    <h4 class="sub_heading">SRM UNIVERSITY- VADAPALANI</h4>
+                    <span class="duration">2021-2025</span>
+                </div>
+                <p class="education-details">B.Tech CSE (AI & ML), CGPA: 9.32</p>
+            </li>
+            <li>
+                <div class="education-header">
+                    <h4 class="sub_heading">AGARWAL VIDYALAYA AND JR. COLLEGE</h4>
+                    <span class="duration">2020-2021</span>
+                </div>
+                <p class="education-details">HSC Computer Science: 90%</p>
+            </li>
+        </ul>
+        <h3 class="main_heading">SKILLS</h3>
         <hr />
         <ul>
-        <li><h5>SRM UNIVERSITY- VADAPALANI</h5></li>
-        <p>B.Tech CSE (AI & ML), CGPA: 9.32 2021-2025</p>
-        <li><h5>AGARWAL VIDYALAYA AND JR. COLLEGE</h5></li>
-        <p>HSC Computer Science: 90% 2020-2021</p>
+        <li ><b class="sub_heading">Programming Languages:</b> Python, Java, C, MySQL</li>
+        <li><b class="sub_heading">AI/ML:</b> Scikit-Learn, Supervised ML(Logistic Regression, KNN etc,.)</li>
+        <li><b class="sub_heading">Generative AI:</b> LangGraph, RAG, FastAPI, Prompt Engineering, AI Governance</li>
+        <li><b class="sub_heading">Tools:</b> Git, VS Code, Miniconda, MS Office</li>
         </ul>
-        <h3>SKILLS</h3>
+        <h3 class="main_heading">PROJECTS</h3>
         <hr />
-        <ul>
-        <li><b>Programming Languages:</b> Python, Java, C, MySQL</li>
-        <li><b>AI/ML:</b> Scikit-Learn, Supervised ML(Logistic Regression, KNN etc,.)</li>
-        <li><b>Generative AI:</b> LangGraph, RAG, FastAPI, Prompt Engineering, AI Governance</li>
-        <li><b>Tools:</b> Git, VS Code, Miniconda, MS Office</li>
-        </ul>
-        <h3>PROJECTS</h3>
-        <hr />
-        <h4>Automated Insurance Claim Processing Engine (LangGraph)</h4>
+        <h4 class="sub_heading">Automated Insurance Claim Processing Engine (LangGraph)</h4>
         <ul>
             <li>Engineered a multi-agent orchestration system using LangGraph and FastAPI to automate end-to-end
 insurance claim validation workflows.</li>
@@ -46,7 +62,7 @@ auditable LLM operations.</li>
             <li>Designed the system to reduce manual processing effort while improving consistency and decision accuracy
 in claim evaluation.</li>
         </ul>
-        <h4>Web Data Ingestion & RAG Architecture Engine (POC)</h4>
+        <h4 class="sub_heading">Web Data Ingestion & RAG Architecture Engine (POC)</h4>
         <ul>
             <li>Built an automated web data extraction pipeline using Crawl4AI and Jina AI to collect and process
 unstructured web content.</li>
@@ -57,14 +73,15 @@ strategies for high-quality semantic search.</li>
             <li>Enabled context-aware retrieval to improve accuracy and relevance of LLM-generated responses over
 custom knowledge bases.</li>
         </ul>
-        <h3>CERTIFICATIONS</h3>
+        <h3 class="main_heading">CERTIFICATIONS</h3>
         <hr />
         <ul>
-            <li>Databricks Certified Data Engineer Professional - <b>DATABRICKS</b></li>
-            <li>Introduction to Machine Learning – <b>NPTEL</b></li>
-            <li>Python for Data Science – <b>NPTEL</b></li>
-            <li>AI-ML Virtual Internship – <b>AICTE Edu-Skills</b></li>
-            <li>Database Foundations – <b>Oracle Academy</b></li>
+            <li>Databricks Certified Data Engineer Professional - <b class="sub_heading">DATABRICKS</b></li>
+            <li>Introduction to Machine Learning – <b class="sub_heading">NPTEL</b></li>
+            <li>Python for Data Science – <b class="sub_heading">NPTEL</b></li>
+            <li>AI-ML Virtual Internship – <b class="sub_heading">AICTE Edu-Skills</b></li>
+            <li>Database Foundations – <b class="sub_heading">Oracle Academy</b></li>
         </ul>
+    </div>
 </body>
 </html>
